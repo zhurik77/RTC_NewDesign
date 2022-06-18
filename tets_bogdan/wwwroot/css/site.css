@@ -1,0 +1,36 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image{
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10px;
+    border-image-source:image(images/image 3.png);
+}
+
+footer {
+    background-color: #FC9D3D;
+}
+.nav-item{
+    float: right;
+}

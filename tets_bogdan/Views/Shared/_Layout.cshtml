@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTK-ONline</title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/tets_bogdan.styles.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow " >
+             <img id="mainImage" class="main-image " src="images/image 3.png" height="50" width="50" alt="Лого" asp-area="" asp-controller="Home" asp-action="Index">
+      <h5 class="my-0 mr-md-auto font-weight-normal" style="margin-left:5px">РТК - Онлайн</h5>
+
+      <a class="btn btn-outline-primary"  asp-area="" asp-controller="mind" asp-action="magic">Регистрация</a>
+      <a class="btn btn-primary" style="margin-left:5px" asp-area="" asp-controller="mind" asp-action="magic">Войти</a>
+
+    </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+<footer class="mt-auto">
+        <div class="row">
+          <div class="col-12 col-md">
+             <img id="mainImage" class="mb-2" style="left:10px" src="images/image 3.png" height="50" width="50" alt="Лого" >
+            <small class="d-block mb-3 text-muted">&copy;DeadDealTime 2022</small>
+          </div>
+          
+          <div class="col-6 col-md">
+            <h5>О "РТК-онлайн"</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Команда разработчиков</a></li>
+              <li><a class="text-muted" href="#">О Кубке РТК</a></li>
+              <li><a class="text-muted" href="#">Правила использования</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+</html>
